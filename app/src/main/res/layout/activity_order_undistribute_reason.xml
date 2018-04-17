@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/reason_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/icon_close"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="24dp"
+        android:text="取消原因"
+        android:textColor="@color/title_color"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reason_close" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView29"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="28dp"-->
+        <!--android:text="发件人原因"-->
+        <!--android:textColor="@color/title_color"-->
+        <!--android:textSize="16sp"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="@+id/textView25"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/textView25" />-->
+    <!---->
+
+    <!--<View-->
+        <!--android:id="@+id/sender_reason"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_marginTop="18dp"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/textView25"-->
+        <!--android:layout_height="42dp"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView33"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:text="收件人原因"-->
+        <!--android:textColor="@color/title_color"-->
+        <!--android:textSize="16sp"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="@+id/textView25"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/textView29" />-->
+    <!---->
+    <!--<View-->
+        <!--android:id="@+id/receiver_reason"-->
+        <!--android:layout_width="match_parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/sender_reason"-->
+        <!--android:layout_height="40dp"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView34"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:text="个人原因"-->
+        <!--android:textColor="@color/title_color"-->
+        <!--android:textSize="16sp"-->
+        <!--app:layout_constraintStart_toStartOf="@+id/textView25"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/textView33" />-->
+
+    <!---->
+
+    <!--<View-->
+        <!--android:id="@+id/personer_reason"-->
+        <!--android:layout_width="match_parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/receiver_reason"-->
+        <!--android:layout_height="40dp"/>-->
+
+    <!--<RadioGroup-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/textView25"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:layout_marginTop="29dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/sender_reason_button"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@null"-->
+            <!--android:button="@drawable/select_history_item"/>-->
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/receiver_reason_button"-->
+            <!--android:layout_marginTop="22dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@null"-->
+            <!--android:button="@drawable/select_history_item"/>-->
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/personer_reason_button"-->
+            <!--android:layout_marginTop="22dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@null"-->
+            <!--android:button="@drawable/select_history_item"/>-->
+
+    <!--</RadioGroup>-->
+
+
+    <EditText
+        android:id="@+id/reason_edit"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/shadow"
+        android:elevation="2dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="请输入取消具体原因"
+        android:inputType="textMultiLine"
+        android:maxLength="100"
+        android:padding="10dp"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textColorHint="@color/fuzhu_text_color"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_title" />
+
+
+    <Button
+        android:id="@+id/button_confirm"
+        android:layout_width="@dimen/x360"
+        android:layout_height="@dimen/y90"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/select_black_gray_button"
+        android:enabled="false"
+        android:text="提交"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/reason_edit_length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="16dp"
+        android:text="100"
+        android:elevation="4dp"
+        android:textSize="16sp"
+        android:textColor="@color/main_color"
+        app:layout_constraintBottom_toBottomOf="@+id/reason_edit"
+        app:layout_constraintEnd_toEndOf="@+id/reason_edit"
+        app:layout_constraintRight_toRightOf="@id/reason_edit" />
+
+
+</android.support.constraint.ConstraintLayout>

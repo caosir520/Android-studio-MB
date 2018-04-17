@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@mipmap/icon_back">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:text="我的资料"/>
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="提交"
+            android:layout_marginRight="@dimen/x20"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="@dimen/y140"
+        android:layout_height="@dimen/y140"
+
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginTop="@dimen/y40"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"/>
+
+    <TextView
+        android:id="@+id/tv_me_head"
+        style="@style/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/x20"
+        android:text="@string/me_info_head"
+        android:textSize="@dimen/text_size_2"
+        app:layout_constraintBottom_toBottomOf="@id/iv_head"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_head" />
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="@id/view1"/>
+    <View
+        android:id="@+id/view1"
+        style="@style/view"
+        android:layout_marginTop="@dimen/y40"
+        app:layout_constraintTop_toBottomOf="@id/iv_head"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+      />
+    <TextView
+        android:id="@+id/text1"
+        style="@style/Text_Head"
+        android:text="@string/me_info_name"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view1"
+        />
+
+    <EditText
+        android:background="@null"
+        android:id="@+id/tv_me_name"
+        style="@style/EditText_fankui.text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/text1"
+        app:layout_constraintLeft_toRightOf="@id/text1"
+        tools:text="到了吗用户xxxxxx" />
+
+
+    <View
+        android:id="@+id/view2"
+        style="@style/view"
+        android:layout_marginTop="@dimen/y40"
+        app:layout_constraintTop_toBottomOf="@id/text1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <TextView
+        android:id="@+id/text2"
+        style="@style/Text_Head"
+        android:text="@string/me_info_phone"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view2"
+        />
+
+    <TextView
+        android:background="@null"
+        android:id="@+id/tv_me_phone"
+        style="@style/EditText_fankui.title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/text2"
+        app:layout_constraintLeft_toRightOf="@id/text2"
+        tools:text="到了吗用户xxxxxx" />
+
+
+    <View
+        android:id="@+id/view3"
+        style="@style/view"
+        android:layout_marginTop="@dimen/y40"
+        app:layout_constraintTop_toBottomOf="@id/text2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <TextView
+        android:id="@+id/text3"
+        style="@style/Text_Head"
+        android:text="@string/me_info_sex"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view3"
+        />
+
+    <TextView
+        android:id="@+id/tv_me_sex"
+        style="@style/Text_Head"
+        app:layout_constraintBaseline_toBaselineOf="@id/text3"
+        app:layout_constraintLeft_toRightOf="@id/text3"
+        tools:text="到了吗用户xxxxxx" />
+
+    <TextView
+        android:id="@+id/tv_me_sex_select"
+        style="@style/Text_Head"
+        android:layout_marginRight="@dimen/x20"
+        android:textColor="#016eea"
+        app:layout_constraintBaseline_toBaselineOf="@id/text3"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="选择" />
+
+    <View
+        android:id="@+id/view4"
+        style="@style/view"
+        android:layout_marginTop="@dimen/y40"
+        app:layout_constraintTop_toBottomOf="@id/text3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <TextView
+        android:id="@+id/text4"
+        style="@style/Text_Head"
+        android:text="@string/me_info_add"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view4"
+        />
+
+    <EditText
+        android:background="@null"
+        android:id="@+id/tv_me_add"
+        style="@style/EditText_fankui.text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/text4"
+        app:layout_constraintLeft_toRightOf="@id/text4"
+        tools:text="到了吗用户xxxxxx" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/shape_dialog_button"
+    android:minWidth="@dimen/x700"
+    android:minHeight="@dimen/y350"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="取消"
+        android:textSize="@dimen/text_size_2"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/EditText_fankui.title"/>
+
+    <TextView
+        android:id="@+id/tv_yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="完成"
+        style="@style/EditText_fankui.title"
+        android:textSize="@dimen/text_size_2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+         />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/dialog_recyler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/tv_yes"></android.support.v7.widget.RecyclerView>
+
+
+</android.support.constraint.ConstraintLayout>

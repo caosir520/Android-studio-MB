@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/image_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/icon_back"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="投诉举报"
+            android:textColor="@color/title_color"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/image_back"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/image_back" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/shei_cuo_le"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:paddingBottom="20dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_title">
+
+        <TextView
+            android:id="@+id/wo_yao_ju_bao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="我要举报"
+            android:textColor="@color/title_color"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="配送员"
+            android:textColor="@color/title_color"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/wo_yao_ju_bao"
+            app:layout_constraintTop_toBottomOf="@+id/wo_yao_ju_bao" />
+
+        <View
+            android:id="@+id/pei_song_yuan"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wo_yao_ju_bao"/>
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="发单方"
+            android:textSize="16sp"
+            android:textColor="@color/title_color"
+            app:layout_constraintStart_toStartOf="@+id/wo_yao_ju_bao"
+            app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+        <View
+            android:id="@+id/send_order_reason"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pei_song_yuan" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="到了吗工作人员"
+            android:textColor="@color/title_color"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/wo_yao_ju_bao"
+            app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+        <View
+            android:id="@+id/worker_reason"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/send_order_reason" />
+
+
+        <RadioGroup
+            android:id="@+id/complaints_radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:clickable="false"
+            android:focusable="false"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wo_yao_ju_bao">
+
+            <RadioButton
+                android:id="@+id/pei_song_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:checked="true"
+                android:button="@drawable/select_pay_radiobutton"
+                android:focusable="false" />
+
+            <RadioButton
+                android:id="@+id/send_order_reason_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                android:button="@drawable/select_pay_radiobutton"
+                android:focusable="false" />
+
+            <RadioButton
+                android:id="@+id/worker_reason_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                android:button="@drawable/select_pay_radiobutton"
+                android:focusable="false" />
+
+        </RadioGroup>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:id="@+id/name_phone"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shei_cuo_le">
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_dot"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/worker_name"
+            app:layout_constraintTop_toTopOf="@+id/worker_name"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <EditText
+            android:id="@+id/worker_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:ems="10"
+            android:maxLength="20"
+            android:hint="请输入业务员姓名(必填)"
+            android:inputType="textPersonName"
+            android:textColor="@color/title_color"
+            android:textColorHint="@color/futext_color"
+            android:textSize="16sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/image2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view10"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/cut_off_color"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/worker_name" />
+
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_dot"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/worker_mobile"
+            app:layout_constraintTop_toTopOf="@+id/worker_mobile"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <EditText
+            android:id="@+id/worker_mobile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:hint="请输入业务员电话号码"
+            android:textSize="16sp"
+            android:textColor="@color/title_color"
+            android:textColorHint="@color/fuzhu_text_color"
+            android:background="@null"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/image4"
+            app:layout_constraintTop_toBottomOf="@+id/view10" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/yuan_yin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_phone"
+        android:background="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="0dp"
+        android:paddingBottom="40dp"
+        android:layout_height="200dp">
+
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="请选择举报原因"
+            android:textSize="20sp"
+            android:textColor="@color/title_color"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--<ImageView-->
+            <!--android:id="@+id/no_real_order_button"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--app:layout_constraintLeft_toLeftOf="parent"-->
+            <!--android:background="@drawable/select_history_item"-->
+            <!--app:layout_constraintTop_toTopOf="@+id/textView38"-->
+            <!--app:layout_constraintBottom_toBottomOf="@+id/textView38" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/textView38"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:text="虚假订单，无需真实配送"-->
+            <!--android:textColor="@color/title_color"-->
+            <!--android:textSize="16sp"-->
+            <!--app:layout_constraintLeft_toRightOf="@id/no_real_order_button"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/textView35" />-->
+        <!--<View-->
+            <!--android:id="@+id/no_real_order"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--app:layout_constraintLeft_toLeftOf="parent"-->
+            <!--app:layout_constraintRight_toRightOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/textView35"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="35dp"/>-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView35" />
+
+        <View
+            android:id="@+id/view11"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/cut_off_color"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+        <EditText
+            android:id="@+id/other_reason"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:ems="10"
+            android:layout_marginLeft="10dp"
+            android:hint="其他举报原因(选填)"
+            android:inputType="textPersonName"
+            android:textColor="@color/title_color"
+            android:textColorHint="@color/fuzhu_text_color"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view11" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button_confirm"
+        android:layout_width="@dimen/x360"
+        android:layout_height="@dimen/y90"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/select_black_gray_button"
+        android:text="确认"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/yuan_yin"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+</android.support.constraint.ConstraintLayout>

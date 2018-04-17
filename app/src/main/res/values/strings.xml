@@ -1,0 +1,47 @@
+<resources>
+    <string name="login_phone_hint">请输入有效手机号</string>
+    <string name="login_yanzhengma">请输入有效验证码</string>
+    <string name="login_getyanzhengma">获取验证码</string>
+    <string name="frist_">请填写物品寄出人信息</string>
+    <string name="user_insured_agreement">《用户保价协议》</string>
+
+    <string name="wx_share_appid">wx39ce314256995ac7</string>
+    <string name="wx_share_secret">a81735d22a7be4def2833a36f85d9adf</string>
+    <string name="wx_pay_appkey">47181242822ae857efe4525d139c54wx</string>
+    <string name="wx_pay_mch_id">1490726512</string>
+
+    <string name="order_details_time">订单时间：</string>
+    <string name="order_details_money">订单费用：</string>
+    <string name="order_details_class">物品种类：</string>
+    <string name="order_details_class_money">物品价值：</string>
+    <string name="order_details_insured">保价服务：</string>
+    <string name="order_details_cancel_people">取消人：</string>
+    <string name="order_details_cancle_reason">取消理由：</string>
+
+    <string name="order">订单</string>
+    <string name="order_details">订单详情</string>
+
+    <string name="no_DC">无法配送</string>
+    <string name="contact_deliver">联系发货人</string>
+    <string name="call_phone_tip">确定要拨打电话 %s 吗?</string>
+
+    <string name="me_inform">通知</string>
+    <string name="me_money">我的钱包</string>
+    <string name="me_friend">邀请好友</string>
+    <string name="me_evalute">评价记录</string>
+    <string name="me_rule">规则说明</string>
+    <string name="me_complaint">投诉举报</string>
+    <string name="me_opinion">意见反馈</string>
+    <string name="me_school">骑士学院</string>
+    <string name="me_set">设置</string>
+    <string name="me_help_phone">客服热线</string>
+
+    <!--我的资料的字段-->
+    <string name="me_info_head">修改头像</string>
+    <string name="me_info_name">名称</string>
+    <string name="me_info_phone">电话</string>
+    <string name="me_info_sex">性别</string>
+    <string name="me_info_add">地址</string>
+    <string name="title_activity_me_info">MeInfoActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>

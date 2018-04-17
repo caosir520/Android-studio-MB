@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/reason_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/select_history_item"
+        app:layout_constraintTop_toTopOf="@+id/complaint_reason"
+        app:layout_constraintBottom_toBottomOf="@+id/complaint_reason" />
+
+    <TextView
+        android:id="@+id/complaint_reason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="虚假订单，无需真实配送"
+        android:textColor="@color/title_color"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@id/reason_button"
+        app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+</android.support.constraint.ConstraintLayout>

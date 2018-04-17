@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/fuzhu_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="right|center"
+        android:text="16:58"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintLeft_toLeftOf="parent"
+     />
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/time_select"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline8"
+        />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/EditText_fankui"
+        android:text="订单提交成功"
+        app:layout_constraintLeft_toRightOf="@+id/guideline9" />
+    <View
+        android:layout_width="1dp"
+        android:layout_height="@dimen/y100"
+        android:background="#333333"
+        app:layout_constraintTop_toBottomOf="@+id/iv"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline8"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.13" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.26" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/im_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/icon_close"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请输入取货码"
+        android:textColor="@color/title_color"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/im_back"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/im_back" />
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/cut_off_color"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/im_back" />
+
+    <TextView
+        android:id="@+id/text_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="取货码输入错误，请重新输入"
+        android:textColor="@color/title_color"
+        app:layout_constraintLeft_toLeftOf="@+id/view_number_edit"
+        app:layout_constraintTop_toTopOf="@id/view_divider" />
+
+    <include
+        android:id="@+id/view_number_edit"
+        layout="@layout/view_number_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_tip" />
+
+    <TextView
+        android:id="@+id/text_resend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="重新发送取货码"
+        android:textColor="@color/title_color"
+        app:layout_constraintLeft_toLeftOf="@id/view_number_edit"
+        app:layout_constraintTop_toBottomOf="@id/view_number_edit" />
+
+    <TextView
+        android:id="@+id/text_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="联系客服"
+        android:textColor="@color/font_blue"
+        app:layout_constraintRight_toRightOf="@id/view_number_edit"
+        app:layout_constraintTop_toBottomOf="@id/view_number_edit" />
+
+    <include
+        layout="@layout/view_number_input_layout"
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/text_resend"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</android.support.constraint.ConstraintLayout>

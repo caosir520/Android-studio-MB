@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true">
+        <!--圆角矩阵-->
+        <!--设置背景-->
+        <shape>
+        <solid android:color="@color/title_color"/>
+
+        <!--设置圆角-->
+        <corners android:radius="30dp"/>
+        </shape>
+</item>
+
+
+
+    <item android:state_enabled="false">
+        <!--圆角矩阵-->
+        <!--设置背景-->
+    <shape>
+        <solid android:color="@color/button_enable_false_color"/>
+
+        <!--设置圆角-->
+        <corners android:radius="30dp"/>
+    </shape>
+
+    </item>
+
+</selector>

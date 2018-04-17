@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="10dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/text_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/select_radiobutton_default"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="默认"
+        android:textColor="@color/title_text_color"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/text_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:drawableLeft="@mipmap/icon_delete_account"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/text_select"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text_select" />
+
+    <TextView
+        android:id="@+id/text_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/icon_edit_account"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/text_select"
+        app:layout_constraintRight_toLeftOf="@+id/text_delete"
+        app:layout_constraintTop_toTopOf="@id/text_select" />
+
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/cut_off_color"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_select" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_click"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_divider">
+
+        <ImageView
+            android:id="@+id/image_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_zhifubao_pay"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/image_pay"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/text_default_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用支付宝提现"
+                android:textColor="@color/title_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/text_default_accout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用支付宝提现"
+                android:textColor="@color/fuzhu_text_color"
+                android:textSize="14sp"
+                app:layout_constraintTop_toBottomOf="@id/text_default_tip" />
+
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

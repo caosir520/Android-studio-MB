@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="net.ed58.dlm.clients.order.EvaluateActivity">
+
+
+    <ImageButton
+        android:id="@+id/evaluate_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@mipmap/icon_shutdown_bulletbox"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/evaluate_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="10dp"
+        android:text="提交"
+        android:textColor="@color/title_text_color"
+        android:textSize="@dimen/text_size_2"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="整体评分"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/title_color"
+        android:layout_marginTop="25dp"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/evaluate_close" />
+
+    <com.wise.common.commonwidget.RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        app:layout_constraintLeft_toRightOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@id/textView"
+        app:layout_constraintBottom_toBottomOf="@id/textView"
+        app:starCount="5"
+        app:starEmpty="@mipmap/icon_star_stroke"
+        app:starFill="@mipmap/icon_star_filling"
+        app:starImageSize="20dp"
+        app:starPadding="5dp"
+        app:starStep="5"
+        app:stepSize="Full" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shadow"
+        android:elevation="3dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="请输入您对该订单的评价"
+        android:inputType="textMultiLine"
+        android:maxLength="100"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        android:textColorHint="@color/futext_color"
+        android:textSize="16sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/evaluate_length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:elevation="6dp"
+        android:text="100"
+        android:textColor="@color/futext_color"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText"
+        app:layout_constraintRight_toRightOf="@+id/editText" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,97 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    signingConfigs {
+        release {
+            keyAlias "${signing_keyAlias}"
+            keyPassword "${signging_certificatePassword}"
+            storePassword "${signging_storePassword}"
+            //   storeFile file('/Users/sunpeng/Documents/wicresoft/wise-s-yidaoandroid/YiDao/yidao_clients_sign.jks')
+            storeFile file('D:\\project\\wise-s-yidaoandroid\\YiDao\\yidao_clients_sign.jks')
+
+
+        }
+        dev {
+
+        }
+    }
+
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "net.ed58.dlm.clients"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+        }
+    }
+    buildTypes {
+        release {
+            resValue "string", "app_name", "驿道"
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField('String', 'SERVER_URL', project.properties['RELEASE_SERVER'])
+        }
+        debug {
+//            signingConfig signingConfigs.release
+//            applicationIdSuffix ".test"
+            signingConfig signingConfigs.release
+            resValue "string", "app_name", "驿道测试版"
+            buildConfigField('String', 'SERVER_URL', project.properties['DEBUG_SERVER'])
+        }
+    }
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile "com.android.support:appcompat-v7:$support_version"
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compile "org.jetbrains.anko:anko-common:$anko_version"
+    compile project(':common')
+    compile project(':irecyclerview')
+    compile files('libs/AMap_Location_V3.6.1_20171012.jar')
+    compile files('libs/AMap_Search_V5.3.1_20170817.jar')
+    compile files('libs/Android_Map3D_SDK_V5.4.0_20170928.jar')
+    compile files('libs/alipaySingle-20170510.jar')
+    compile files('libs/libammsdk.jar')
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+}
+
+buildscript {
+
+    repositories {
+
+        jcenter()
+
+    }
+
+    dependencies {
+
+        classpath "org.jetbrains.kotlin:kotlin-android-extensions:$kotlin_version"
+
+    }
+
+}

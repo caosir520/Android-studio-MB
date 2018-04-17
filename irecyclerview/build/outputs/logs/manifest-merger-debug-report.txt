@@ -1,0 +1,35 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\android_studio\shixi\WC\yidao2\wise-s-yidaoandroid\YiDao\irecyclerview\src\main\AndroidManifest.xml:1:1-48
+INJECTED from E:\android_studio\shixi\WC\yidao2\wise-s-yidaoandroid\YiDao\irecyclerview\src\main\AndroidManifest.xml:1:1-48
+INJECTED from E:\android_studio\shixi\WC\yidao2\wise-s-yidaoandroid\YiDao\irecyclerview\src\main\AndroidManifest.xml:1:1-48
+INJECTED from E:\android_studio\shixi\WC\yidao2\wise-s-yidaoandroid\YiDao\irecyclerview\src\main\AndroidManifest.xml:1:1-48
+INJECTED from E:\android_studio\shixi\WC\yidao2\wise-s-yidaoandroid\YiDao\irecyclerview\src\main\AndroidManifest.xml:1:1-48
+INJECTED from E:\android_studio\shixi\WC\yidao2\wise-s-yidaoandroid\YiDao\irecyclerview\src\main\AndroidManifest.xml:1:1-48
+INJECTED from E:\android_studio\shixi\WC\yidao2\wise-s-yidaoandroid\YiDao\irecyclerview\src\main\AndroidManifest.xml:1:1-48
+	package
+		ADDED from E:\android_studio\shixi\WC\yidao2\wise-s-yidaoandroid\YiDao\irecyclerview\src\main\AndroidManifest.xml:1:11-46
+		INJECTED from E:\android_studio\shixi\WC\yidao2\wise-s-yidaoandroid\YiDao\irecyclerview\src\main\AndroidManifest.xml
+		INJECTED from E:\android_studio\shixi\WC\yidao2\wise-s-yidaoandroid\YiDao\irecyclerview\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\android_studio\shixi\WC\yidao2\wise-s-yidaoandroid\YiDao\irecyclerview\src\main\AndroidManifest.xml
+		ADDED from E:\android_studio\shixi\WC\yidao2\wise-s-yidaoandroid\YiDao\irecyclerview\src\main\AndroidManifest.xml:1:1-48
+		INJECTED from E:\android_studio\shixi\WC\yidao2\wise-s-yidaoandroid\YiDao\irecyclerview\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from E:\android_studio\shixi\WC\yidao2\wise-s-yidaoandroid\YiDao\irecyclerview\src\main\AndroidManifest.xml
+		ADDED from E:\android_studio\shixi\WC\yidao2\wise-s-yidaoandroid\YiDao\irecyclerview\src\main\AndroidManifest.xml:1:1-48
+		INJECTED from E:\android_studio\shixi\WC\yidao2\wise-s-yidaoandroid\YiDao\irecyclerview\src\main\AndroidManifest.xml
+uses-sdk
+INJECTED from E:\android_studio\shixi\WC\yidao2\wise-s-yidaoandroid\YiDao\irecyclerview\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\android_studio\shixi\WC\yidao2\wise-s-yidaoandroid\YiDao\irecyclerview\src\main\AndroidManifest.xml
+INJECTED from E:\android_studio\shixi\WC\yidao2\wise-s-yidaoandroid\YiDao\irecyclerview\src\main\AndroidManifest.xml
+INJECTED from E:\android_studio\shixi\WC\yidao2\wise-s-yidaoandroid\YiDao\irecyclerview\src\main\AndroidManifest.xml
+INJECTED from E:\android_studio\shixi\WC\yidao2\wise-s-yidaoandroid\YiDao\irecyclerview\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\android_studio\shixi\WC\yidao2\wise-s-yidaoandroid\YiDao\irecyclerview\src\main\AndroidManifest.xml
+		ADDED from E:\android_studio\shixi\WC\yidao2\wise-s-yidaoandroid\YiDao\irecyclerview\src\main\AndroidManifest.xml
+		INJECTED from E:\android_studio\shixi\WC\yidao2\wise-s-yidaoandroid\YiDao\irecyclerview\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\android_studio\shixi\WC\yidao2\wise-s-yidaoandroid\YiDao\irecyclerview\src\main\AndroidManifest.xml
+		ADDED from E:\android_studio\shixi\WC\yidao2\wise-s-yidaoandroid\YiDao\irecyclerview\src\main\AndroidManifest.xml
+		INJECTED from E:\android_studio\shixi\WC\yidao2\wise-s-yidaoandroid\YiDao\irecyclerview\src\main\AndroidManifest.xml

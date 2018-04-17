@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="net.ed58.dlm.clients.order.OrderPaymentActivity">
+
+    <ImageView
+        android:id="@+id/image_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginTop="16dp"
+        android:background="@mipmap/icon_shutdown_bulletbox"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginTop="20dp"
+        android:text="订单支付"
+        android:textColor="@color/title_text_color"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_back" />
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginTop="@dimen/y45"
+        android:text="需要支付金额"
+        android:textColor="@color/title_text_color"
+        android:textSize="@dimen/x32"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/text_order_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="end"
+        android:layout_marginRight="0dp"
+        android:paddingBottom="0dp"
+        android:ellipsize="end"
+        android:text="0.00"
+        android:maxLines="1"
+        android:textColor="@color/title_text_color"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView12"
+        android:textSize="26sp"
+        app:layout_constraintHorizontal_bias="0.901"
+        app:layout_constraintLeft_toRightOf="@+id/textView8"
+        app:layout_constraintRight_toLeftOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginTop="@dimen/y45"
+        android:text="元"
+        android:textColor="@color/title_text_color"
+        android:textSize="@dimen/x30"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="@dimen/x30"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginTop="@dimen/y40"
+        android:background="@color/cut_off_color"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginTop="@dimen/y30"
+        android:text="付款方式"
+        android:textColor="@color/title_text_color"
+        android:textSize="@dimen/x36"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginTop="@dimen/y45"
+        android:src="@mipmap/ic_wechat_pay"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/y45"
+        android:gravity="center"
+        android:paddingTop="3dp"
+        android:text="微信支付"
+        android:textColor="@color/title_text_color"
+        android:textSize="@dimen/x32"
+        app:layout_constraintLeft_toRightOf="@+id/imageView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginTop="@dimen/y40"
+        android:src="@mipmap/ic_zhifubao_pay"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/x40"
+        android:paddingTop="3dp"
+        android:text="支付宝"
+        android:textColor="@color/title_text_color"
+        android:textSize="@dimen/x32"
+        app:layout_constraintLeft_toRightOf="@+id/imageView11"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginTop="@dimen/y40"
+        android:src="@mipmap/ic_wallet_pay"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/y40"
+        android:paddingTop="3dp"
+        android:text="钱包余额"
+        android:textColor="@color/title_text_color"
+        android:textSize="@dimen/x32"
+        app:layout_constraintLeft_toRightOf="@+id/imageView12"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+
+    <Button
+        android:id="@+id/button_pay"
+        android:layout_width="@dimen/x360"
+        android:layout_height="@dimen/y90"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/select_black_gray_button"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="确认支付"
+        android:textColor="@color/backgroup_color"
+        android:textSize="@dimen/x32"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="@dimen/y50"
+        android:clickable="false"
+        android:focusable="false"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15">
+
+        <RadioButton
+            android:id="@+id/rb_wxpay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@drawable/select_pay_radiobutton"
+            android:focusable="false" />
+
+        <RadioButton
+            android:id="@+id/rb_alipay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y60"
+            android:background="@null"
+            android:button="@drawable/select_pay_radiobutton"
+            android:focusable="false" />
+
+        <RadioButton
+            android:id="@+id/rb_wallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y54"
+            android:background="@null"
+            android:button="@drawable/select_pay_radiobutton" />
+
+    </RadioGroup>
+
+
+    <View
+        android:id="@+id/wx_pay_checked"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="@dimen/y25"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+
+    <View
+        android:id="@+id/alipay_checked"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="-6dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wx_pay_checked" />
+
+    <View
+        android:id="@+id/wallet_pay_checked"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alipay_checked" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="getyanzhengma">#f08200</color>
+    <color name="login_edit_bg">#19dddddd</color>
+
+    <!--主色-->
+    <color name="main_color">#f08300</color>
+    <color name="title_text_color">#333333</color>
+    <color name="zhengwen_text_color">#666666</color>
+    <color name="fuzhu_text_color">#999999</color>
+    <color name="fenge_text_color">#eeeeee</color>
+    <color name="backgroup_color">#f8f8f8</color>
+    <color name="button_enable_false_color">#bdc1cb</color>
+
+    <color name="trans_bg">#80666666</color>
+    <!--搜索栏顶部选中颜色：#444444-->
+    <color name="search_select_true">#444444</color>
+</resources>

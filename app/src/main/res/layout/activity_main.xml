@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/rg_homeTab"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <RadioGroup
+        android:id="@+id/rg_homeTab"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroup_color"
+        android:elevation="10dp"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container">
+
+        <RadioButton
+            android:id="@+id/mainTabHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_tab_home"
+            android:gravity="center"
+            android:paddingTop="@dimen/y18"
+            android:text="首页"
+            android:textColor="@drawable/textcolor_main_bottom" />
+
+        <RadioButton
+            android:id="@+id/mainTabOrder"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_tab_order"
+            android:gravity="center"
+            android:paddingTop="@dimen/y18"
+            android:text="订单"
+            android:textColor="@drawable/textcolor_main_bottom"
+            android:visibility="visible" />
+
+        <RadioButton
+            android:id="@+id/mainTabMe"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_tab_me"
+            android:gravity="center"
+            android:paddingTop="@dimen/y18"
+            android:text="我的"
+            android:textColor="@drawable/textcolor_main_bottom" />
+
+    </RadioGroup>
+
+
+</android.support.constraint.ConstraintLayout>

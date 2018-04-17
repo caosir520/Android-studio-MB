@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="331dp"
+        android:layout_height="120dp"
+        android:background="@drawable/circular_matrix"
+        android:elevation="3dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mapView"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/fenge_text_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--发的图片-->
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/main_dot"
+            app:layout_constraintBottom_toTopOf="@+id/view4"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="@dimen/x20" />
+
+        <TextView
+            android:id="@+id/text_current_address"
+            android:layout_width="0dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:paddingLeft="@dimen/x30"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/y5"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginTop="@dimen/y30"
+            android:text="当前地址"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/text_size_3"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
+            app:layout_constraintLeft_toRightOf="@+id/imageView6"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="@dimen/x20"
+            app:layout_constraintRight_toLeftOf="@+id/imageView5"
+            android:layout_marginRight="8dp" />
+
+        <TextView
+            android:id="@+id/text_top_person_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/y30"
+            android:layout_marginTop="@dimen/y5"
+
+            android:text="请填写物品寄出人信息"
+            android:paddingLeft="@dimen/x30"
+            android:textColor="#666666"
+            android:textSize="@dimen/text_size_4"
+            app:layout_constraintBottom_toTopOf="@+id/view4"
+            app:layout_constraintLeft_toLeftOf="@+id/text_current_address"
+            app:layout_constraintTop_toTopOf="@+id/guideline2"
+            app:layout_constraintVertical_bias="0.444" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.25"
+            tools:layout_editor_absoluteY="111dp"
+            tools:layout_editor_absoluteX="0dp" />
+        <!--收的图片-->
+        <ImageView
+            android:id="@+id/im_shou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/main_dot"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view4"
+            android:layout_marginStart="@dimen/x20" />
+
+        <TextView
+            android:id="@+id/text_receive_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/y10"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="@dimen/y30"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:paddingLeft="@dimen/x30"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="物品寄到哪里去"
+            android:textColor="@color/title_text_color"
+            android:textSize="@dimen/text_size_3"
+            app:layout_constraintBottom_toTopOf="@+id/text_bottom_person_info"
+            app:layout_constraintLeft_toRightOf="@+id/im_shou"
+            app:layout_constraintTop_toBottomOf="@+id/view4"
+            app:layout_goneMarginBottom="@dimen/y30"
+            android:layout_marginStart="9dp"
+            app:layout_constraintRight_toLeftOf="@+id/imageView10"
+            android:layout_marginRight="8dp" />
+
+        <TextView
+            android:id="@+id/text_bottom_person_info"
+            android:layout_width="0dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/y30"
+            android:paddingLeft="@dimen/x30"
+            android:text="收的name：电话"
+            android:textColor="#666666"
+            android:textSize="@dimen/text_size_4"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@+id/text_receive_address"
+            app:layout_constraintRight_toLeftOf="@+id/imageView10"
+            android:layout_marginRight="8dp" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_marginTop="8dp"
+            android:background="@mipmap/in_input_home"
+            app:layout_constraintBottom_toTopOf="@+id/view4"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="@dimen/x20" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_marginTop="8dp"
+            android:background="@mipmap/in_input_home"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view4"
+            android:layout_marginEnd="@dimen/x20"
+            android:id="@+id/imageView10" />
+
+        <View
+            android:id="@+id/view_map_top"
+            android:layout_width="0dp"
+            android:layout_height="61dp"
+            app:layout_constraintBottom_toTopOf="@+id/view4"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </View>
+
+        <View
+            android:id="@+id/view_map_bottom"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="0dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="0dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view4">
+
+        </View>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.16111112"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="58dp" />
+
+
+</android.support.constraint.ConstraintLayout>

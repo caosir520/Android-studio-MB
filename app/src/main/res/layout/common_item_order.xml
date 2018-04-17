@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/shape_order_item"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+    <ImageView
+        android:id="@+id/icon_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/icon_order_title"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_order_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="0923902390902930"
+        android:textColor="@color/title_color"
+        app:layout_constraintBottom_toBottomOf="@id/icon_title"
+        app:layout_constraintLeft_toRightOf="@id/icon_title"
+        app:layout_constraintTop_toTopOf="@id/icon_title" />
+
+    <TextView
+        android:id="@+id/text_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="已接单"
+        android:textColor="@color/title_color"
+        app:layout_constraintBottom_toBottomOf="@id/icon_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/icon_title" />
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/cut_off_color"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon_title" />
+
+    <ImageView
+        android:id="@+id/icon_item_order_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/icon_item_order_send"
+        app:layout_constraintLeft_toLeftOf="@id/icon_title"
+        app:layout_constraintTop_toBottomOf="@id/view_divider" />
+
+    <TextView
+        android:id="@+id/text_send_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:maxLines="2"
+        android:text="0923902390902930"
+        android:textColor="@color/title_color"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/icon_item_order_send"
+        app:layout_constraintLeft_toRightOf="@id/icon_item_order_send"
+        app:layout_constraintRight_toLeftOf="@+id/text_top_distance"
+        app:layout_constraintTop_toTopOf="@id/icon_item_order_send" />
+
+    <TextView
+        android:id="@+id/text_top_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="0.7km"
+        android:textColor="@color/futext_color"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/icon_item_order_send"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/icon_item_order_send" />
+
+
+    <ImageView
+        android:id="@+id/icon_item_order_receive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/icon_item_order_receive"
+        app:layout_constraintLeft_toLeftOf="@id/icon_title"
+        app:layout_constraintTop_toBottomOf="@id/text_send_address" />
+
+    <TextView
+        android:id="@+id/text_receive_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:maxLines="2"
+        android:text="中国农业银行(紫竹科学园区支行)aa"
+        android:textColor="@color/title_color"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/icon_item_order_receive"
+        app:layout_constraintLeft_toRightOf="@id/icon_item_order_send"
+        app:layout_constraintRight_toLeftOf="@+id/text_bottom_distance"
+        app:layout_constraintTop_toTopOf="@id/icon_item_order_receive" />
+
+    <TextView
+        android:id="@+id/text_bottom_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="0.8km"
+        android:textColor="@color/fuzhu_text_color"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/icon_item_order_receive"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/icon_item_order_receive" />
+</android.support.constraint.ConstraintLayout>

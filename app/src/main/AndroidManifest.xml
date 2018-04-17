@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+package="net.ed58.dlm.clients">
+
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.CAMERA" />
+<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+<uses-permission android:name="android.permission.READ_CONTACTS" />
+<uses-permission android:name="android.permission.WRITE_CONTACTS" />
+<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+<uses-permission android:name="android.permission.ACCESS_GPS" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+<uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.ACCURACY_COARSE" />
+<uses-permission android:name="android.permission.CALL_PHONE" />
+<uses-permission android:name="android.permission.VIBRATE" />
+<uses-permission android:name="android.permission.ACCESS_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.RESTART_PACKAGES" />
+<uses-permission android:name="android.permission.FLASHLIGHT" />
+<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+<application
+    android:name=".MyApplication"
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme1">
+    <activity
+        android:name=".welcome.WelcomeActivity"
+        android:configChanges="keyboard|keyboardHidden|orientation"
+        android:screenOrientation="portrait">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name=".login.LoginActivity"
+        android:configChanges="keyboard|keyboardHidden|orientation"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name=".main.MainActivity"
+        android:configChanges="keyboard|keyboardHidden|orientation"
+        android:launchMode="singleTask"
+        android:screenOrientation="portrait" />
+
+    <meta-data
+        android:name="com.amap.api.v2.apikey"
+        android:value="4fbc6f29dc1f3be3fb0a870f0cd73c39" />
+
+    <service android:name="com.amap.api.location.APSService" />
+
+    <!-- 微信支付 -->
+    <activity
+        android:name=".wxapi.WXPayEntryActivity"
+        android:configChanges="orientation|keyboardHidden"
+        android:exported="true"
+        android:screenOrientation="portrait"
+        android:theme="@style/Theme.Transparent"
+        android:windowSoftInputMode="stateAlwaysHidden" />
+
+    <!-- 支付宝 -->
+    <activity
+        android:name="com.alipay.sdk.app.H5PayActivity"
+        android:configChanges="orientation|keyboardHidden|navigation"
+        android:exported="false"
+        android:screenOrientation="behind" />
+    <activity
+        android:name="com.alipay.sdk.auth.AuthActivity"
+        android:configChanges="orientation|keyboardHidden|navigation"
+        android:exported="false"
+        android:screenOrientation="behind" />
+    <!-- 支付宝 -->
+
+    <activity android:name=".address.MapSelectAddressActivity" />
+    <activity android:name=".address.KeyWordsSelectAddressActivity" />
+    <activity android:name=".order.FillAddressInfoActivity" />
+    <activity android:name=".order.FreightDetailsActivity" />
+    <activity
+        android:name=".order.RemarkInformationActivity"
+        android:configChanges="keyboard|keyboardHidden|orientation"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="stateAlwaysVisible|adjustUnspecified" />
+    <activity android:name=".order.OrderPaymentActivity" />
+    <activity android:name=".order.FillOrderActivity" />
+    <activity android:name=".order.ProductTypeActivity" />
+    <activity android:name=".history.HistoryActivity" />
+    <activity android:name=".Insured.InsuredActivity" />
+    <activity android:name=".view.testActivity" />
+    <activity android:name=".order.OrderDetailsActivity" />
+    <activity android:name=".order.OrderMapDetailActivity" />
+    <activity android:name=".order.AuthActivity" />
+    <activity android:name=".order.EvaluateActivity" />
+    <activity android:name=".order.OrderUndistributeReasonActivity" />
+    <activity android:name=".order.TakeProductActivity" />
+    <activity
+        android:name="com.wise.common.commonwidget.photopicker.ImgSelActivity"
+        android:configChanges="keyboard|keyboardHidden|orientation"
+        android:screenOrientation="portrait" />
+    <activity android:name=".order.ComplaintsReportActivity" />
+    <activity android:name=".order.OpinionFeedbackActivity" />
+    <activity android:name=".wallet.MyWalletActivity" />
+    <activity
+        android:name=".wallet.RechargeActivity"
+        android:configChanges="keyboard|keyboardHidden|orientation"
+        android:windowSoftInputMode="adjustPan|stateHidden"
+        android:screenOrientation="portrait" />
+    <activity android:name=".wallet.WithdrawActivity" />
+    <activity android:name=".wallet.SelectAcountActivity" />
+    <activity android:name=".wallet.UpdateAccountActivity" />
+    <activity android:name=".me.MeInfoActivity" />
+    <activity android:name=".view.testActivity" />
+    <activity android:name=".wallet.TransactionDetailsActivity"/>
+    <activity android:name=".order.RiderEvaluationRecordActivity"/>
+</application>
+
+</manifest>

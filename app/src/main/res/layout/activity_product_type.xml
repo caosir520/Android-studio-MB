@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context="net.ed58.dlm.clients.order.ProductTypeActivity">
+
+    <ImageView
+        android:id="@+id/image_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/icon_close"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_submit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_back">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_one_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x20"
+                android:text="品类"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/title_color"
+                app:layout_constraintLeft_toRightOf="parent" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/oneRecyclerview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y30"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_one_type" />
+
+            <TextView
+                android:id="@+id/text_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y20"
+                android:paddingLeft="@dimen/x33"
+                android:text="温馨提示：根据相关法律法规，到了么骑手将对您所寄
+物品品类进行核实，请暂时不要将物品外包装封口，感
+谢您的配合。"
+                android:textColor="@color/main_color_top"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/oneRecyclerview"
+                android:layout_marginRight="16dp" />
+
+
+            <TextView
+                android:id="@+id/text_two_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="品类"
+                android:textColor="@color/title_color"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_tip" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/twoRecyclerview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y30"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_two_type" />
+
+            <TextView
+                android:id="@+id/text_third_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="重量"
+                android:textColor="@color/title_color"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/twoRecyclerview" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:text="1公斤内不加价"
+                android:textColor="@color/title_color"
+                app:layout_constraintBottom_toTopOf="@+id/image_plus"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_plus" />
+
+            <ImageView
+                android:id="@+id/image_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/x20"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/icon_plus"
+                app:layout_constraintRight_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_third_type" />
+
+            <TextView
+                android:id="@+id/text_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/x20"
+                android:layout_marginRight="@dimen/x20"
+                android:text="1公斤"
+                android:textColor="@color/title_color"
+                app:layout_constraintBottom_toTopOf="@+id/image_plus"
+                app:layout_constraintRight_toLeftOf="@+id/image_plus"
+                app:layout_constraintTop_toBottomOf="@+id/image_plus" />
+
+            <ImageView
+                android:id="@+id/image_jian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/x20"
+                android:layout_marginRight="@dimen/x20"
+                android:src="@mipmap/icon_jian"
+                app:layout_constraintBottom_toTopOf="@+id/image_plus"
+                app:layout_constraintRight_toLeftOf="@+id/text_weight"
+                app:layout_constraintTop_toBottomOf="@+id/image_plus" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="173dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="@dimen/y20"
+        android:background="@drawable/select_black_gray_button"
+        android:text="提交"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
